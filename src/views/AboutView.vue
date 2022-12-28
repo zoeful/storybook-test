@@ -1,6 +1,11 @@
+<script setup>
+import LabelItem from '../components/molecules/labelItem/LabelItem.vue'
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <LabelItem />
   </div>
 </template>
 

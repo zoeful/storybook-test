@@ -2,6 +2,7 @@
   "name": "storybooktest",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "evui": "^3.3.48",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.0.28",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
