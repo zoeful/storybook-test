@@ -4,26 +4,35 @@
         class="label-item__label"
         :class="labelClass"
     >
-      {{ props.label }}
+      {{ label }}
     </dt>
     <dd
         class="label-item__body"
         :class="linkedItemClass"
         @click="onClickItem"
     >
-      <slot />
+      blabla
     </dd>
   </dl>
 </template>
 
 <script setup>
-import { useLabelItem } from './useLabelItem';
-const props = withDefaults(defineProps(), {
-  label: '',
-  type: 'primary',
-  clickItemFn: null,
-  tooltipText: '',
-});
+import { useLabelItem } from "./useLabelItem.js";
+const props = defineProps({
+  label: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    required: true
+  },
+})
+
+// const props = withDefvaults(defineProps(), {
+//   label: '',
+//   type: 'default',
+// });
 
 const {
   labelClass,
@@ -37,7 +46,8 @@ const {
   display: inline-block;
   margin: 6px 8px 6px 0;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.88);
+  color: #000000;
+  width: 100px;
 
   &__label {
     display: inline;

@@ -13,7 +13,7 @@ stories.add('with hello message', () => ({
         msg: {
             /*
             * The text(label, defaultValue) method from Knobs allows you to receive
-            * value dynamically in the Storybook Ui.
+            * value dynamically in the Stor ybook Ui.
             */
             default: text('Text', 'Hello Storybook')
         }

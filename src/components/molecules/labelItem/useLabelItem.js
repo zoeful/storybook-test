@@ -1,6 +1,7 @@
 import { computed, reactive } from 'vue';
 
 const useLabelItem = (props) => {
+    console.log('props : ', props);
     const labelClass = computed(() => {
         switch (props.type) {
             case 'primary':
@@ -11,6 +12,7 @@ const useLabelItem = (props) => {
                 return '';
         }
     });
+    console.log('labelClass : ', labelClass.value);
     const linkedItemClass = reactive({
         'label-item--is-linked': !!props.clickItemFn,
     });
